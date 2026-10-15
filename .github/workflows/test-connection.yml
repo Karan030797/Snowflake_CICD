@@ -22,7 +22,6 @@ jobs:
       PRIVATE_KEY_PASSPHRASE: ${{ secrets.SNOWFLAKE_PRIVATE_KEY_PASSPHRASE }}
       # FOR KEYPAIR WE NEED TIHS - JSON Web Token
       SNOWFLAKE_AUTHENTICATOR: 'SNOWFLAKE_JWT'
-      SNOWFLAKE_TOKEN: ${{ secrets.SNOWFLAKE_TOKEN }}
 
     steps:
       # Step 1: Installs and configures the Snow CLI using the job-level env vars
